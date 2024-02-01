@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<channel name="xfce4-notifyd" version="1.0">
+  <property name="applications" type="empty">
+    <property name="known_applications" type="array">
+      <value type="string" value="eos-reboot-required2"/>
+      <value type="string" value="org.freedesktop.network-manager-applet"/>
+      <value type="string" value="org.Nemo"/>
+      <value type="string" value="org.xfce.Thunar"/>
+      <value type="string" value="xborder"/>
+      <value type="string" value="xborders"/>
+      <value type="string" value="Xfce volume control"/>
+      <value type="string" value="Xfce4-notifyd settings"/>
+    </property>
+  </property>
+  <property name="log-max-size-enabled" type="bool" value="true"/>
+  <property name="show-notifications-on" type="string" value="active-monitor"/>
+  <property name="log-level" type="string" value="not-fully-shown"/>
+  <property name="log-level-apps" type="string" value="all"/>
+  <property name="notify-location" type="string" value="top-right"/>
+</channel>
