@@ -13,6 +13,6 @@ I am using this on EndeavourOS, if it makes a difference.
 #### Screenshots
 Here are some screenshots of the uploaded dotfiles:
 
-![screenshot-1]()
-![screenshot-2]()
-![screenshot-3]()
+![screenshot-1](https://github.com/astonish-g/i3-everforest-dotfiles/blob/main/sources/images/1.png)
+![screenshot-2](https://github.com/astonish-g/i3-everforest-dotfiles/blob/main/sources/images/2.png)
+![screenshot-3](https://github.com/astonish-g/i3-everforest-dotfiles/blob/main/sources/images/3.png)
