@@ -1,0 +1,86 @@
+# VSCode Color Info
+
+[Visual Studio Code](https://code.visualstudio.com) extension that provides quick information css colors.
+
+![fields](https://github.com/mattbierner/vscode-color-info/raw/HEAD/media/starter-example.png)
+
+
+## About
+*Color Info* adds additional information when you hover over a css color, including:
+
+* `rgb` – RGB color values. Enabled by default
+* `hsl` – HSL color values. Enabled by default
+* `css-color-name` - Name of the color (`red`, `blue`, ...).
+* `hsv` – HSV color values
+* `lab` – LAB color values
+* `lch` – LCHab color values
+* `cmyk` – CMYK color values. Enabled by default
+* `hex` – Hex value. Enabled by default
+* `alpha` – Alpha value. Enabled by default
+* `preview` – Preview of the color. Displays color with alpha in lower left corner and color without alpha in upper right corner. Enabled by default
+* `preview-xl` – Larger preview of the color
+* `preview-square` – Square preview of the color
+* `preview-square-xl` – Larger square preview of the color
+
+You can customize which of these fields are displayed and the order they are displayed in using the settings described below.
+
+By default, the extension works with any css, sass, scss, or less document and recognizes all basic css color formats, including named colors. You can also enable Color Info in additional file types using the `colorInfo.languages` setting
+
+
+## Configuration
+
+#### `colorInfo.fields`
+Ordered array of color fields to display.
+
+![fields](https://github.com/mattbierner/vscode-color-info/raw/HEAD/media/fields.png)
+
+
+#### `colorInfo.excludedFields`
+Array of fields not to display. Overrides `colorInfo.fields`. If you only need to exclude one or two of the default fields, using `colorInfo.excludedFields` is the preferred approach.
+
+![excluded fields](https://github.com/mattbierner/vscode-color-info/raw/HEAD/media/excluded.png)
+
+
+#### `colorInfo.languages`
+Defines which files and languages have color info enabled, and which color types are supported. The default language setting enables all css color values for `css`, `sass`, and `less` documents:
+
+```json
+"colorInfo.languages": [
+    {
+        "selector": "css",
+        "colors": "css"
+    }, {
+        "selector": "sass",
+        "colors": "css"
+    }, {
+        "selector": "scss",
+        "colors": "css"
+    }, {
+        "selector": "less",
+        "colors": "css"
+    }
+]
+```
+
+Each element consists of:
+
+* `"selector"` - [VSCode document selector](https://code.visualstudio.com/Docs/extensionAPI/vscode-api#DocumentSelector).
+* `"colors"` - String or array of strings defining the types of colors to display information for. Valid values color types are:
+
+    * `css` - All css color value types
+    * `hex` - Css hex (`#ff00ff` or `#f0f`)
+    * `hex+alpha` - Css hex plus alpha (`#ff00ff77` or `#f0f7`)
+    * `rgb` - Css rgb or rgba (`rgb(1, 2, 3)` or `rgba(1, 2, 3, 0.5)`) c
+    * `hsl` - Css hsl or hsla (`hsl(1, 2, 3)` or  `hsla(1, 2, 3, 0.5)`)
+    * `css-colors-names` - Css color names (`red`, `blue`)
+
+VSCode does not currently support nested languages, so to enable Color Info in an `html` file, you must add:
+
+```json
+{
+    "selector": "html",
+    "colors": "css"
+}
+```
+
+To your `colorInfo.languages` setting. Make you add this setting to the end of the default `colorInfo.languages` setting so that you do not disable Color Info for the standard languages.

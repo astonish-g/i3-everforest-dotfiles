@@ -1,0 +1,2 @@
+#!/bin/sh
+feh --no-fehbg --bg-fill '/home/everi3/Pictures/Wallpapers/Render17.png' 

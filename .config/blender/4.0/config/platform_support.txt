@@ -1,0 +1,12 @@
+{AMD/AMD Radeon Graphics (rembrandt, LLVM 16.0.6, DRM 3.49, 6.1.60-1-lts)/4.6 (Core Profile) Mesa 23.2.1-arch1.2}=SUPPORTED
+{AMD/AMD Radeon Graphics (rembrandt, LLVM 16.0.6, DRM 3.49, 6.1.61-1-lts)/4.6 (Core Profile) Mesa 23.2.1-arch1.2}=SUPPORTED
+{AMD/AMD Radeon Graphics (rembrandt, LLVM 16.0.6, DRM 3.49, 6.1.62-1-lts)/4.6 (Core Profile) Mesa 23.2.1-arch1.2}=SUPPORTED
+{AMD/AMD Radeon Graphics (rembrandt, LLVM 16.0.6, DRM 3.49, 6.1.63-1-lts)/4.6 (Core Profile) Mesa 23.2.1-arch1.2}=SUPPORTED
+{AMD/AMD Radeon Graphics (rembrandt, LLVM 16.0.6, DRM 3.49, 6.1.65-1-lts)/4.6 (Core Profile) Mesa 23.2.1-arch1.2}=SUPPORTED
+{AMD/AMD Radeon Graphics (rembrandt, LLVM 16.0.6, DRM 3.54, 6.6.4-zen1-1-zen)/4.6 (Core Profile) Mesa 23.2.1-arch1.2}=SUPPORTED
+{AMD/AMD Radeon Graphics (rembrandt, LLVM 16.0.6, DRM 3.54, 6.6.6-zen1-1-zen)/4.6 (Core Profile) Mesa 23.2.1-arch1.2}=SUPPORTED
+{AMD/AMD Radeon Graphics (rembrandt, LLVM 16.0.6, DRM 3.49, 6.1.67-1-lts)/4.6 (Core Profile) Mesa 23.2.1-arch1.2}=SUPPORTED
+{AMD/AMD Radeon Graphics (rembrandt, LLVM 16.0.6, DRM 3.49, 6.1.68-1-lts)/4.6 (Core Profile) Mesa 23.2.1-arch1.2}=SUPPORTED
+{AMD/AMD Radeon Graphics (radeonsi, rembrandt, LLVM 16.0.6, DRM 3.49, 6.1.68-1-lts)/4.6 (Core Profile) Mesa 23.3.1-arch1.1}=SUPPORTED
+{AMD/AMD Radeon Graphics (radeonsi, rembrandt, LLVM 16.0.6, DRM 3.49, 6.1.69-1-lts)/4.6 (Core Profile) Mesa 23.3.1-arch1.1}=SUPPORTED
+{AMD/AMD Radeon Graphics (radeonsi, rembrandt, LLVM 16.0.6, DRM 3.54, 6.6.8-zen1-1-zen)/4.6 (Core Profile) Mesa 23.3.2-arch1.2}=SUPPORTED

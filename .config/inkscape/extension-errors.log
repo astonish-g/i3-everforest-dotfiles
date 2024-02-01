@@ -1,0 +1,42 @@
+Extension "PostScript Input" failed to load because a dependency was not met.
+Dependency:
+	type: executable
+	location: path
+	string: ps2pdf
+
+Extension "Export to PDF via Scribus" failed to load because a dependency was not met.
+Dependency:
+	type: executable
+	location: path
+	string: scribus
+
+Extension "XFIG Input" failed to load because a dependency was not met.
+Dependency:
+	type: executable
+	location: path
+	string: fig2dev
+
+Extension "Formula (pdflatex)" failed to load because a dependency was not met.
+Dependency:
+	type: executable
+	location: path
+	string: pdflatex
+
+Extension "Plot" failed to load because a dependency was not met.
+Dependency:
+	type: file
+	location: inx
+	string: hpgl_decoder.py
+
+Extension "Optimized PNG" failed to load because a dependency was not met.
+Dependency:
+	type: executable
+	location: path
+	string: optipng
+
+Extension "EPS Input" failed to load because a dependency was not met.
+Dependency:
+	type: executable
+	location: path
+	string: ps2pdf
+

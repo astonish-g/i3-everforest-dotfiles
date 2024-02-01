@@ -1,0 +1,151 @@
+[blexmono]
+size = 11
+
+[blexmono.bold]
+family = "BlexMono Nerd Font"
+style = "Bold"
+
+[blexmono.bold_italic]
+family = "BlexMono Nerd Font"
+style = "Bold Italic"
+
+[blexmono.italic]
+family = "BlexMono Nerd Font"
+style = "Medium Italic"
+
+[blexmono.normal]
+family = "BlexMono Nerd Font"
+style = "Medium"
+
+[fantasque]
+size = 12
+
+[fantasque.bold]
+family = "FantasqueSansM Nerd Font"
+style = "Bold"
+
+[fantasque.bold_italic]
+family = "FantasqueSansM Nerd Font"
+style = "Bold Italic"
+
+[fantasque.italic]
+family = "FantasqueSansM Nerd Font"
+style = "Italic"
+
+[fantasque.normal]
+family = "FantasqueSansM Nerd Font"
+style = "Regular"
+
+[font]
+size = 9
+
+[font.bold]
+family = "Maple Mono"
+style = "Bold"
+
+[font.bold_italic]
+family = "Maple Mono"
+style = "BoldItalic"
+
+[font.italic]
+family = "Maple Mono"
+style = "Italic"
+
+[font.normal]
+family = "Maple Mono"
+style = "Regular"
+
+[hack]
+size = 11
+
+[hack.bold]
+family = "Hack Nerd Font"
+style = "Bold"
+
+[hack.bold_italic]
+family = "Hack Nerd Font"
+style = "Bold Italic"
+
+[hack.italic]
+family = "Hack Nerd Font"
+style = "Italic"
+
+[hack.normal]
+family = "Hack Nerd Font"
+style = "Regular"
+
+[iosevka]
+size = 12
+
+[iosevka.bold]
+family = "IosevkaTerm Nerd Font"
+style = "Bold"
+
+[iosevka.bold_italic]
+family = "IosevkaTerm Nerd Font"
+style = "Bold Italic"
+
+[iosevka.italic]
+family = "IosevkaTerm Nerd Font"
+style = "Medium Italic"
+
+[iosevka.normal]
+family = "IosevkaTerm Nerd Font"
+style = "Medium"
+
+[jetbrains]
+size = 11
+
+[jetbrains.bold]
+family = "JetBrainsMono Nerd Font"
+style = "Bold"
+
+[jetbrains.bold_italic]
+family = "JetBrainsMono Nerd Font"
+style = "Bold Italic"
+
+[jetbrains.italic]
+family = "JetBrainsMono Nerd Font"
+style = "Medium Italic"
+
+[jetbrains.normal]
+family = "JetBrainsMono Nerd Font"
+style = "Medium"
+
+[maple]
+size = 9
+
+[maple.bold]
+family = "Maple Mono"
+style = "Bold"
+
+[maple.bold_italic]
+family = "Maple Mono"
+style = "BoldItalic"
+
+[maple.italic]
+family = "Maple Mono"
+style = "Italic"
+
+[maple.normal]
+family = "Maple Mono"
+style = "Regular"
+
+[pragmata]
+size = 11
+
+[pragmata.bold]
+family = "Pragmata Pro Mono"
+style = "Bold"
+
+[pragmata.bold_italic]
+family = "Pragmata Pro Mono"
+style = "Bold Italic"
+
+[pragmata.italic]
+family = "Pragmata Pro Mono"
+style = "Italic"
+
+[pragmata.normal]
+family = "Pragmata Pro Mono"
+style = "Regular"

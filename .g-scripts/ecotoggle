@@ -1,0 +1,13 @@
+#!/usr/bin/env bash
+
+ACTION=${1,,}
+
+if [[ $ACTION == "enable" ]];
+then
+	for i in {6..15}; do echo 0 > /sys/devices/system/cpu/cpu${i}/online; done
+elif [[ $ACTION == "disable" ]];
+then
+	for i in {6..15}; do echo 1 > /sys/devices/system/cpu/cpu${i}/online; done
+else
+	echo "Script needs enable/disable to be passed as argument"
+fi

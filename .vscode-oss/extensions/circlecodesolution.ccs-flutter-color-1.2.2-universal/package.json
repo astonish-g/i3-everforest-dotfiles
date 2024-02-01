@@ -1,0 +1,107 @@
+{
+	"name": "ccs-flutter-color",
+	"displayName": "Flutter Color",
+	"description": "This plugin help you to easily visualize the color.",
+	"version": "1.2.2",
+	"publisher": "circlecodesolution",
+	"keywords": [
+		"futlter",
+		"dart",
+		"color",
+		"andriod",
+		"ios"
+	],
+	"author": {
+		"name": "Nilesh Chavan"
+	},
+	"icon": "images/logo-color.jpg",
+	"galleryBanner": {
+		"color": "#356bbc",
+		"theme": "dark"
+	},
+	"license": "MIT",
+	"bugs": {
+		"url": "https://github.com/neodisk17/vscode-ext-flutter-color-viewer/issues",
+		"email": "lk07540@gmail.com"
+	},
+	"repository": {
+		"type": "git",
+		"url": "https://github.com/neodisk17/vscode-ext-flutter-color-viewer"
+	},
+	"engines": {
+		"vscode": "^1.81.0"
+	},
+	"categories": [
+		"Other"
+	],
+	"languages": [
+		{
+			"id": "dart",
+			"extensions": [
+				".dart",
+				".cs",
+				".js",
+				".json"
+			],
+			"aliases": [
+				"dart",
+				"cs",
+				"js",
+				"json"
+			]
+		}
+	],
+	"activationEvents": [
+		"onStartupFinished"
+	],
+	"main": "./dist/extension.js",
+	"contributes": {
+		"commands": []
+	},
+	"homepage": "https://github.com/neodisk17/vscode-ext-flutter-color-viewer/blob/master/README.md",
+	"scripts": {
+		"vscode:prepublish": "npm run package",
+		"compile": "webpack",
+		"watch": "webpack --watch",
+		"package": "webpack --mode production --devtool hidden-source-map",
+		"compile-tests": "tsc -p . --outDir out",
+		"watch-tests": "tsc -p . -w --outDir out",
+		"pretest": "npm run compile-tests && npm run compile && npm run lint",
+		"lint": "eslint src --ext ts",
+		"test": "node ./out/test/runTest.js"
+	},
+	"devDependencies": {
+		"@types/mocha": "^10.0.1",
+		"@types/node": "16.x",
+		"@types/vscode": "^1.81.0",
+		"@typescript-eslint/eslint-plugin": "^6.4.1",
+		"@typescript-eslint/parser": "^6.4.1",
+		"@vscode/test-electron": "^2.3.4",
+		"eslint": "^8.47.0",
+		"glob": "^10.3.3",
+		"mocha": "^10.2.0",
+		"ts-loader": "^9.4.4",
+		"typescript": "^5.1.6",
+		"webpack": "^5.88.2",
+		"webpack-cli": "^5.1.4"
+	},
+	"announcement": {
+		"onVersion": "1.0.1",
+		"message": "[NEW] Integration  of Color palette: supports all the languages except - CSS, LESS, SCSS."
+	},
+	"dependencies": {
+		"node-fetch": "^3.3.2"
+	},
+	"__metadata": {
+		"id": "6c4c71db-5514-453f-82f3-bdc9602ccd2f",
+		"publisherId": "d6e48851-89f2-482c-8545-9b92797d48cc",
+		"publisherDisplayName": "circlecodesolution",
+		"targetPlatform": "universal",
+		"isApplicationScoped": false,
+		"updated": true,
+		"isPreReleaseVersion": false,
+		"installedTimestamp": 1704490612724,
+		"pinned": false,
+		"preRelease": false
+	}
+}

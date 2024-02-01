@@ -1,0 +1,290 @@
+/**
+ * @name EverforestDiscord
+ * @description A Discord palette conversion from arcticicestudio's NordTheme to sainnhe's Everforest theme. Uses mwittrien's DiscordRecolor CSS as a base with our own additions.
+ * @editor dompus
+ * @author izutsumi, IDislikeChair, mwittrien
+ * @version 1.0.1
+ * @website https://github.com/izutsumi/nordDiscord
+ * @source https://raw.githubusercontent.com/izutsumi/nordDiscord/master/nord.theme.css
+ */
+
+ /* DiscordRecolor CSS by mwittrien */
+ @import url(https://mwittrien.github.io/BetterDiscordAddons/Themes/DiscordRecolor/DiscordRecolor.css);
+ /* Nord Highlight.js */
+ /* @import url("https://unpkg.com/nord-highlightjs@0.1.0/dist/nord.css"); */
+ /* RadialStautus */
+ /* @import url("https://discordstyles.github.io/RadialStatus/base.css"); */
+ 
+ 
+ /* Variables from DiscordRecolor. RGBA values only. */
+ :root {
+ 	--accentcolor: 			131, 192, 146;
+ 	--linkcolor: 			131, 192, 146;
+ 	--mentioncolor: 		168, 210, 178;
+ 	--textbrightest: 		228, 220, 204;
+ 	--textbrighter: 		219, 209, 187;
+ 	--textbright: 			211, 198, 170;
+ 	--textdark: 			168, 158, 136;
+ 	--textdarker: 			126, 118, 102;
+ 	--textdarkest: 			84,  79,  68;
+ 	--backgroundaccent: 		35, 42, 46;
+ 	--backgroundprimary: 		45, 53, 59;
+ 	--backgroundsecondary: 		46, 56, 60;
+ 	--backgroundsecondaryalt: 	46, 56, 60,.4;
+ 	--backgroundtertiary: 		55, 65, 59;
+ 	--backgroundfloating: 		46, 56, 60;
+ 
+ 	/* Radial Status variable */
+ 	--rs-small-spacing  : 1px;            /* spacing between avatar and status */
+ 	--rs-large-spacing  : 3px;            /* spacing between avatar and status for user popouts & modals/profiles */
+ 	--rs-width          : 2px;            /* Width/thickness of status border */
+ 	--rs-avatar-shape   : 50%;            /* 50% for round - 0% for square */
+ 	--rs-online-color   : var(--Green);  /* color for online status */
+ 	--rs-idle-color     : var(--Yellow);  /* color for idle status */
+ 	--rs-dnd-color      : var(--Red);  /* color for dnd status */
+ 	--rs-offline-color  : var(--Black4);   /* color for offline status */
+ 	--rs-streaming-color: var(--Mauve);  /* color for streaming status */
+ 	--rs-invisible-color: var(--Black4);   /* color for invisible status - Note this will only show for your own invisibility */
+ 
+ 
+ 	/* Everforest color scheme */
+ 	--Black1  : #1e2327;
+ 	--Black2  : #202529;
+ 	--Black3  : #2b3339;
+ 	--Black4  : #323c41;
+   	--Gray0 : #465149;
+ 	--Gray1 : #646a5e;
+  	--Gray2 : #868d80;
+   	--White : #d9e0ee;
+   	--Beige  : #a59b85;
+ 	--Teal : #83c092;
+
+  	--Sky  : #89dceb; 
+
+ 	--Blue  : #7fbbb3;
+ 	--Red  : #e67e80;
+
+ 	--Peach  : #f8Bd96; 
+
+ 	--Yellow : #dbbc7f;
+ 	--Green  : #a7c080;
+ 	--Mauve  : #d699b6;
+ 	--Black0  : #121517;
+ 	--BlackN  :  #23292e;
+ }
+ 
+ /* Mac style buttons */
+ /* ! The clickable area is too small. */
+ .da-winButton,
+ div[class*="winButton"] {
+ 	color        : transparent;
+ 	height       : 11px;
+ 	width        : 11px;
+ 	border-radius: 100%;
+ 	margin-top   : 5.5px;
+ 	margin-right : 7px;
+ 	margin-left  : 9px;
+ 
+ 	transition: .2s;
+ }
+ 
+ .da-winButtonMinMax[aria-label="Minimize"],
+ div[class*="winButtonMinMax"][aria-label="Minimize"] {
+ 	background-color: var(--BlackN);
+ }
+ 
+ .da-winButtonMinMax[aria-label="Maximize"],
+ div[class*="winButtonMinMax"][aria-label="Maximize"] {
+ 	background-color: var(--BlackN);
+ }
+ 
+ .da-winButtonClose,
+ div[class*="winButtonClose"] {
+ 	background-color: var(--BlackN);
+ 	margin-right    : 15px
+ }
+ 
+ .da-winButton:hover,
+ div[class*="winButton"]:hover {
+ 	color           : transparent;
+ 	background-color: var(--Black4);
+ }
+ 
+ /* Text Highlighting Styling */
+ ::selection {
+     background-color: rgba(80, 90, 96, .5);
+     color           : var(--textbright);
+ }
+ 
+ /* Mention Border */
+ .da-mentioned:before,
+ div[class*="mentioned"]:before
+  {
+     background-color: rgb(var(--mentioncolor));
+ }
+ 
+ /* New Messages Divider & Pill */
+ .da-isUnread .da-content,
+ div[class*="isUnread"] span[class*="content"] {
+     color: var(--Red) !important;
+ }
+ 
+ /* ? Not sure what does this do */
+ .da-nameWrap .da-textRow,
+ div[class*="nameWrap"] div[class*="textRow"]
+  {
+     background-color: transparent;
+ }
+ 
+ .da-isUnread,
+ div[class*="isUnread"] {
+     border-color: var(--Red);
+ }
+ 
+ .da-unreadPill,
+ span[class*="unreadPill"] {
+     background-color: var(--Red);
+ }
+ 
+ .da-unreadPillCapStroke,
+ path[class*="unreadPillCapStroke"] {
+     color: var(--Red);
+     fill : var(--Red);
+ }
+ 
+ /* Folder Icon and Background Colors  */
+ .da-expandedFolderIconWrapper path,
+ div[class*="expandedFolderIconWrapper"] path {
+     fill: rgb(var(--accentcolor));
+ }
+ 
+ .da-folderIconWrapper,
+ div[class*="folderIconWrapper"]  {
+     background-color: var(--Black1) !important;
+ }
+ 
+ /* Administrator Crown */
+ .da-ownerIcon,
+ svg[class*="ownerIcon"] {
+     color: var(--Yellow);
+ }
+ 
+ /* Premium Icon */
+ .da-premiumIcon,
+ svg[class*="premiumIcon"] {
+ 	color: var(--Mauve);
+ }
+ 
+ /* Add Server & Explore Buttons */
+ .da-circleIconButton,
+ div[class*="circleIconButton"] {
+     color: var(--Gray0);
+ }
+ 
+ .da-circleIconButton.da-selected, .da-selected .da-childWrapper,
+ div[class*="circleIconButton"][class*="selected"], 
+ div[class*="selected"] div[class*="childWrapper"] {
+     background-color: var(--Black3);
+ }
+ 
+ /* New pin icon */
+ .da-iconBadge,
+ span[class*="iconBadge"] {
+ 	background-color: var(--Red);
+ }
+ 
+ /* Microphone and speaker mute */
+ .da-strikethrough,
+ path[class*="strikethrough"] {
+ 	color: var(--Red);
+ }
+ 
+ /* Status icons */
+ /* ! Better solution needed. The animation does not transit smoothly */
+ .da-avatar .da-wrapper[aria-label$="Online"] > svg > svg > rect,
+ .da-status[aria-label="Online"] > svg > rect,
+ div[class*="avatar"] div[aria-label$="Online"] > svg > svg > rect,
+ div[class*="status"][aria-label="Online"] > svg > rect,
+ rect[mask="url(#svg-mask-status-online)"] ,
+ 
+ .da-avatar .da-wrapper[aria-label$="mobile"] > svg > svg > rect,
+ .da-status[aria-label="mobile"] > svg > rect,
+ div[class*="avatar"] div[aria-label$="mobile"] > svg > svg > rect,
+ div[class*="status"][aria-label$="mobile"] > svg > rect,
+ rect[mask="url(#svg-mask-status-online-mobile)"] { 
+ 	fill: var(--Green);
+ }
+ 
+ .da-status[style="background-color: rgb(67, 181, 129);"],
+ div[class*="status"][style="background-color: rgb(67, 181, 129);"] {
+ 	background-color: var(--Green) !important;
+ }
+ 
+ 
+ .da-avatar .da-wrapper[aria-label$="Do Not Disturb"] > svg > svg > rect,
+ .da-status[aria-label="Do Not Disturb"] > svg > rect,
+ div[class*="avatar"] div[aria-label$="Do Not Disturb"] > svg > svg > rect,
+ div[class*="status"][aria-label="Do Not Disturb"] > svg > rect,
+ rect[mask="url(#svg-mask-status-dnd)"] {
+ 	fill: var(--Red);
+ }
+ 
+ .da-status[style="background-color: rgb(240, 71, 71);"],
+ div[class*="status"][style="background-color: rgb(240, 71, 71);"] {
+ 	background-color: var(--Red) !important;
+ }
+ 
+ .da-avatar .da-wrapper[aria-label$="Streaming"] > svg > svg > rect,
+ .da-status[aria-label="Streaming"] > svg > rect,
+ div[class*="avatar"] div[aria-label$="Streaming"] > svg > svg > rect,
+ div[class*="status"][aria-label="Streaming"] > svg > rect,
+ rect[mask="url(#svg-mask-status-streaming)"] {
+ 	fill: var(--Mauve);
+ }
+ 
+ .da-status[style="background-color: rgb(89, 54, 149);"],
+ div[class*="status"][style="background-color: rgb(89, 54, 149);"] {
+ 	background-color: var(--Mauve) !important;
+ }
+ 
+ .da-avatar .da-wrapper[aria-label$="Idle"] > svg > svg > rect,
+ .da-status[aria-label="Idle"] > svg > rect,
+ div[class*="avatar"] div[aria-label$="Idle"] > svg > svg > rect,
+ div[class*="status"][aria-label="Idle"] > svg > rect,
+ rect[mask="url(#svg-mask-status-idle)"] {
+ 	fill: var(--Yellow);
+ }
+ 
+ .da-status[style="background-color: rgb(250, 166, 26);"],
+ div[class*="status"][style="background-color: rgb(250, 166, 26);"] {
+ 	background-color: var(--Yellow) !important;
+ }
+ 
+ .da-avatar .da-wrapper[aria-label$="Invisible"] > svg > svg > rect,
+ div[class*="avatar"] div[aria-label$="Invisible"] > svg > svg > rect,
+ div[class*="status"][aria-label="Invisible"] > svg > rect,
+ rect[mask="url(#svg-mask-status-invisible)"],
+ 
+ .da-avatar .da-wrapper[aria-label$="Offline"] > svg > svg > rect,
+ div[class*="avatar"] div[aria-label$="Offline"] > svg > svg > rect,
+ div[class*="status"][aria-label="Offline"] > svg > rect,
+ rect[mask="url(#svg-mask-status-offline)"] {
+ 	fill: var(--Black4	);
+ }
+ 
+ .da-status[style="background-color: rgb(116, 127, 141);"],
+ div[class*="status"][style="background-color: rgb(116, 127, 141);"] {
+ 	background-color: var(--Black4	) !important;
+ }
+ 
+ div[class*="divider"] {
+ 	background-color: transparent !important;
+ }
+ 
+ .lookFilled-1Gx00P.colorGreen-29iAKY {
+    background-color: #5e81ac
+  } 
+   
+  .lookFilled-1Gx00P.colorGreen-29iAKY:hover {
+    background-color: #81a1c1
+  }

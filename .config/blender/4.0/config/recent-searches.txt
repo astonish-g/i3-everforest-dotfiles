@@ -1,0 +1,12 @@
+   Material.008
+Converter ▸ Color Ramp
+ F Pink Linen Fabric - cavani
+   Texture.002
+ F Leather
+   Leather BC 1
+
+   Door
+   Legs
+ F arch_glass_01
+   Supurgelik
+ F Wood

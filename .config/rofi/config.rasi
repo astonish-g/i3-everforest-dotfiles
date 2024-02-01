@@ -1,0 +1,41 @@
+//@theme "/home/everi3/.config/rofi/themes/everforest.rasi"
+@theme "/home/everi3/.config/rofi/themes/rounded-green-dark.rasi"
+
+* {
+    bg4: #2D353BAA;
+    bg5: #A7C080AA;
+    bg6: #7A879059;
+    bg7: #A3B2BD23;
+    fg4: #C4C4C4;
+}
+
+window {
+    background-color: @bg4;
+    border: 2px;
+    border-color: @bg5;
+}
+
+inputbar {
+    background-color: @bg7;
+    border-color: @bg5;
+}
+
+entry {
+    placeholder-color: @fg4;
+}
+
+listview {
+    fixed-height: true;
+}
+
+element normal active {
+    text-color: @bg5;
+}
+
+element selected normal, element selected active {
+    background-color:   @bg5;
+}
+
+prompt {
+    enabled: false;
+}

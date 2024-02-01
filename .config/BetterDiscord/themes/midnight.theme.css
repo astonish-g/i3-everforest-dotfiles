@@ -1,0 +1,74 @@
+/**
+ * @name midnight
+ * @description A darkened discord theme.
+ * @author refact0r
+ * @version 1.6.0
+ * @source https://github.com/refact0r/midnight-discord
+ * @authorId 508863359777505290
+*/
+
+/* IMPORTANT: make sure to enable dark mode in discord settings for the theme to apply properly!! */
+
+@import url('https://refact0r.github.io/midnight-discord/midnight.css');
+
+/* change colors and variables here */
+:root {
+	/* font */
+	--font-primary: 'figtree'; /* change to 'gg sans' for default discord font */
+	--font-display: 'figtree'; /* change to 'gg sans' for default discord font */
+
+	/* amount of spacing and padding */
+	--spacing: 10px;
+	/* radius of round corners */
+	--roundness: 6px;
+
+	/* color of links */
+	--accent-1: #A7C080;
+	/* color of unread dividers and some indicators */
+	--accent-2: #A7C080;
+	/* color of accented buttons */
+	--accent-3: hsl(190, 80%, 42%);
+	/* color of accented buttons when hovered */
+	--accent-4: hsl(190, 80%, 36%);
+	/* color of accented buttons when clicked */
+	--accent-5: hsl(190, 80%, 30%);
+
+	/* color of green online dot, change to #23a55a for default green */
+	--online-indicator: var(--accent-2);
+
+	/* color of mentions and messages that mention you */
+	--mention: #cbd1c524;
+	/* color of mentions and messages that mention you when hovered */
+	--mention-hover: #d3c6aa45;
+
+	/* color of bright text on colored buttons */
+	--text-1: hsl(220, 40%, 90%);
+	/* color of headings and important text */
+	--text-2: #A7C080;
+	/* color of normal text */
+	--text-3: #c1c7c3;
+	/* color of icon buttons and channels */
+	--text-4: #9DA9A0;
+	/* color of muted channels/chats and timestamps */
+	--text-5: #859289;
+
+	/* color of dark buttons when clicked */
+	--bg-1: hsl(220, 15%, 20%);
+	/* color of dark buttons */
+	--bg-2: hsl(220, 15%, 16%);
+	/* color of spacing around panels and secondary elements, so the borders*/
+	--bg-3: #232A2E;
+	/* main background color of the interior panels*/
+	--bg-4: #2D353B;
+
+	/* color of channels and icon buttons when hovered */
+	--hover: hsla(90, 36%, 66%, 0.323);
+	/* color of channels and icon buttons when clicked or selected */
+	--active: hsla(220, 20%, 40%, 0.2);
+	/* color of messages when hovered */
+	--message-hover: #343F44;
+
+	/* top left icon */
+	--moon-icon: block; /* change to 'none' to hide moon icon */
+	--discord-icon: none; /* change to 'block' to show default discord icon */
+}
