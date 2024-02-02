@@ -1,0 +1,31 @@
+{
+    "window.zoomLevel": 2,
+    "workbench.colorTheme": "Everforest Dark",
+    "editor.minimap.enabled": false,
+    "editor.scrollbar.verticalScrollbarSize": 0,
+    "editor.scrollbar.horizontalScrollbarSize": 0,
+    "workbench.statusBar.visible": false,
+    "window.menuBarVisibility": "toggle",
+    "settings.cycle": [{
+        "id": "lineNumbers",
+        "values":[
+            {
+                "editor.lineNumbers": "off",
+                "editor.folding": false,
+                "editor.glyphMargin": false
+            },
+            {
+                "editor.lineNumbers": "on",
+                "editor.folding": true,
+                "editor.glyphMargin": true
+    
+            }
+        ]
+    }
+],
+"editor.lineNumbers": "off",
+"editor.folding": false,
+"editor.glyphMargin": false,
+"glassit.alpha": 255,
+"workbench.activityBar.location": "hidden",
+}

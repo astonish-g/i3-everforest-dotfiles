@@ -1,0 +1,12 @@
+// Place your key bindings in this file to override the defaults
+[
+    {
+        "key": "alt+l",
+        "command": "settings.cycle.lineNumbers",
+        "when": "editorFocus"
+    },
+    {
+        "key": "alt+i",
+        "command": "workbench.action.toggleActivityBarVisibility"
+    },
+]
